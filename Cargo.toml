@@ -1,6 +1,6 @@
 [package]
 name = "sm2335egh"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2021"
 authors = ["Jo Jo <jo@jo.zone>"]
 description = "Driver for the SM2335EGH LED controller found in the SwitchBot Color Bulb"
