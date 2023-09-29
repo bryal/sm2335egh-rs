@@ -1,0 +1,29 @@
+# SM2335EGH-rs
+
+A GPIO-based driver for the SM2335EGH LED controller used in the SwitchBot Color Bulb, written in pure no-std Rust.
+
+The SM2335EGH (aka just SM2335) is a 5-channel, 10-bit LED controller made by Shenzen Sunmoon Microelectronics.
+[Some details about the chip can be found on their website, chinaasic.com](http://www.chinaasic.com/chipDetails/detail_290.html).
+Alternatively, you can find the [document with the specs here in doc/](doc/SM2335EGH-chip-details-ch.pdf).
+
+In short, the five channels (called OUT1 through OUT5) are essentially split into two groups.
+The first three channels (OUT1-OUT3) are low voltage at 40V and allow a maximimum current of 160mA.
+In practice, these three channels are used for RGB / coloured light.
+The last two channels (OUT4-OUT5) are much higher voltage at 500V, but the maximum current is halved at 80mA.
+These two channels are used for warm & cool white.
+
+In my SwitchBot bulbs, this is the concrete channel mapping used:
+
+| Output | Group | Color/hue  |
+|--------|-------|------------|
+| OUT1   | RGB   | Green      |
+| OUT2   | RGB   | Red        |
+| OUT3   | RGB   | Blue       |
+| OUT4   | CW    | Warm white |
+| OUT5   | CW    | Cold white |
+
+This chip seems fairly uncommon at this point (2023-09).
+At least I'm not aware of any other products than the SwitchBot bulbs that use it.
+The specific model number of my bulbs with this chip is W1401400.
+
+![Rainbow color cycle on a dismantled SwitchBot Color Bulb connected to a flasher/debugging probe](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)

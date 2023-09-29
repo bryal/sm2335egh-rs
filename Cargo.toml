@@ -2,7 +2,16 @@
 name = "sm2335egh"
 version = "0.1.0"
 edition = "2021"
+authors = ["Jo Jo <jo@jo.zone>"]
+description = "Driver for the SM2335EGH LED controller used in the SwitchBot Color Bulb"
+readme = "README.md"
+repository = "https://github.com/bryal/sm2335egh-rs"
+license = "MIT"
+keywords = ["sm2335egh", "sm2335", "switchbot", "led", "bulb"]
+categories = ["embedded", "hardware-support", "no-std"]
+
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+embedded-hal = "=1.0.0-rc.1"
