@@ -1,6 +1,6 @@
 # SM2335EGH-rs
 
-A GPIO-based driver for the SM2335EGH LED controller used in the SwitchBot Color Bulb, written in pure no-std Rust.
+A GPIO-based driver for the SM2335EGH LED controller found in the SwitchBot Color Bulb, written in pure no-std Rust.
 
 The SM2335EGH (aka just SM2335) is a 5-channel, 10-bit LED controller made by Shenzen Sunmoon Microelectronics.
 [Some details about the chip can be found on their website, chinaasic.com](http://www.chinaasic.com/chipDetails/detail_290.html).
@@ -26,7 +26,7 @@ This chip seems fairly uncommon at this point (2023-09).
 At least I'm not aware of any other products than the SwitchBot bulbs that use it.
 The specific model number of my bulbs with this chip is W1401400.
 
-![Rainbow color cycle on a dismantled SwitchBot Color Bulb connected to a flasher/debugging probe](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+![Rainbow color cycle on a dismantled SwitchBot Color Bulb connected to a flasher/debugging probe](switchbot-rust-rainbow.gif)
 
 ## Implementation
 

@@ -1,9 +1,9 @@
 [package]
 name = "sm2335egh"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 authors = ["Jo Jo <jo@jo.zone>"]
-description = "Driver for the SM2335EGH LED controller used in the SwitchBot Color Bulb"
+description = "Driver for the SM2335EGH LED controller found in the SwitchBot Color Bulb"
 readme = "README.md"
 repository = "https://github.com/bryal/sm2335egh-rs"
 license = "MIT"
