@@ -27,3 +27,13 @@ At least I'm not aware of any other products than the SwitchBot bulbs that use i
 The specific model number of my bulbs with this chip is W1401400.
 
 ![Rainbow color cycle on a dismantled SwitchBot Color Bulb connected to a flasher/debugging probe](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+
+## Implementation
+
+I just based the driver on the ones in [Tasmota](https://github.com/arendst/Tasmota/pull/15839) and [ESPHome](https://github.com/esphome/esphome/pull/3924). I've asked the manufacturer for more information about the protocol, just to have a first hand source, but I'm not particularly worried about bugs. The protocol as found in the Tasmota and ESPHome implementations is really simple, and I haven't had any issues in practice. 
+
+However, if you happen to have access to the protocol specification, please contact me! Similarly, if you've spotted an issue in the current implementation -- don't hesitate to open an issue (or even better, a PR).
+
+## License
+
+The MIT License (MIT). See [LICENSE](LICENSE).
