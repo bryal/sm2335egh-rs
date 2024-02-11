@@ -1,6 +1,6 @@
 [package]
 name = "sm2335egh"
-version = "0.1.2"
+version = "0.2.0"
 edition = "2021"
 authors = ["Jo Jo <jo@jo.zone>"]
 description = "Driver for the SM2335EGH LED controller found in the SwitchBot Color Bulb"
@@ -14,4 +14,4 @@ categories = ["embedded", "hardware-support", "no-std"]
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-embedded-hal = "=1.0.0-rc.1"
+embedded-hal = "1.0.0"
